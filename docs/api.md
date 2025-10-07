@@ -56,7 +56,23 @@ Returns a catalog of items based on type and ID.
       "type": "movie",
       "name": "Movie Title",
       "poster": "https://image.url/poster.jpg",
-      "background": "https://image.url/background.jpg"
+      "background": "https://image.url/background.jpg",
+      "logo": "https://image.url/logo.png",
+      "description": "Movie description",
+      "runtime": "2h 30min",
+      "year": "2023",
+      "director": ["Director Name"],
+      "imdbRating": "8.5",
+      "genre": ["Action", "Adventure"],
+      "app_extras": {
+        "cast": [
+          {
+            "name": "Actor Name",
+            "character": "Character Name",
+            "photo": "https://image.url/actor.jpg"
+          }
+        ]
+      }
     }
   ]
 }
@@ -82,11 +98,45 @@ Returns metadata for a specific item.
     "name": "Movie Title",
     "poster": "https://image.url/poster.jpg",
     "background": "https://image.url/background.jpg",
+    "logo": "https://image.url/logo.png",
     "description": "Movie description",
-    "runtime": "120",
-    "year": 2023,
+    "runtime": "2h 30min",
+    "year": "2023",
+    "released": "2023-03-15T00:00:00.000Z",
     "director": ["Director Name"],
-    "cast": ["Actor 1", "Actor 2"]
+    "writer": ["Writer Name"],
+    "imdbRating": "8.5",
+    "genre": ["Action", "Adventure"],
+    "genres": ["Action", "Adventure"],
+    "country": "United States",
+    "trailers": [
+      {
+        "source": "youtube_video_id",
+        "type": "Trailer"
+      }
+    ],
+    "trailerStreams": [
+      {
+        "title": "Official Trailer",
+        "ytId": "youtube_video_id"
+      }
+    ],
+    "links": [
+      {
+        "name": "8.5",
+        "category": "imdb",
+        "url": "https://imdb.com/title/tt1234567"
+      }
+    ],
+    "app_extras": {
+      "cast": [
+        {
+          "name": "Actor Name",
+          "character": "Character Name",
+          "photo": "https://image.url/actor.jpg"
+        }
+      ]
+    }
   }
 }
 ```

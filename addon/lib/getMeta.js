@@ -137,6 +137,7 @@ const buildTvResponse = async (res, type, language, tmdbId, rpdbkey, config = {}
   const response = {
     country: Utils.parseCoutry(res.production_countries),
     description: res.overview,
+    director: Utils.parseDirector(res.credits),
     genre: Utils.parseGenres(res.genres),
     imdbRating,
     imdb_id: res.external_ids.imdb_id,
